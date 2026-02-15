@@ -12,12 +12,13 @@ export const personalInfo = {
     github: 'https://github.com/shubhamxpawar',
     twitter: 'https://x.com/shubhamxpawar',
     leetcode: 'https://leetcode.com/u/og_shubh',
+    email: 'mailto:shubhamxpawar27@gmail.com',
   },
 }
 
 export const skills = {
-  languages: ['C++', 'Python', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'SQL'],
-  stack: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express.js', "Postgres", 'MongoDB', 'Supabase',],
+  languages: ['C++', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
+  stack: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express.js', "Postgres", 'MongoDB', 'Supabase', 'Vercel', 'Figma', 'GitHub', 'Bun', 'Next.js'],
 }
 
 export const experience = [
@@ -25,15 +26,15 @@ export const experience = [
     company: 'MantraHire Solutions',
     role: 'Freelance',
     type: 'Remote',
-    period: '',
-    description: '',
+    period: 'Nov 2024 - Dec 2024',
+    description: 'Developed a modern recruitment platform with smooth animations and responsive design. Built using React, Framer Motion, and deployed on Vercel.',
   },
   {
     company: 'Cyra',
     role: 'Frontend Intern',
     type: 'Remote',
     period: 'Jan 2026 - present',
-    description: '',
+    description: 'Working on frontend development projects using modern web technologies. Contributing to building scalable and user-friendly web applications.',
   },
 ]
 
@@ -51,6 +52,7 @@ export const projects = [
     ],
     liveUrl: 'https://almasphere.vercel.app/',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    image: '/almasphere.png',
   },
   {
     name: 'MantraHire Solutions',
@@ -63,6 +65,7 @@ export const projects = [
     ],
     liveUrl: 'https://mantrahiresolutions.vercel.app/',
     technologies: ['React', 'Framer Motion', 'Vite', 'Vercel'],
+    image: '/mantrahire.png',
   },
   {
     name: 'QuickCare',
@@ -74,6 +77,7 @@ export const projects = [
     ],
     liveUrl: 'https://quickcare-henna.vercel.app/',
     technologies: ['React', 'Vite', 'Vercel'],
+    image: '/quickcare.png',
   },
 ]
 

@@ -2,6 +2,7 @@
 
 # dependencies
 /.kiro
+/.agents
 /node_modules
 /.pnp
 .pnp.*
