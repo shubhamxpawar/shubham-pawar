@@ -58,6 +58,7 @@ export function ProjectCard({
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-400 ease-smooth
                          group-hover:scale-105"
+              loading='lazy'
               priority={false}
             />
           ) : (
@@ -99,9 +100,9 @@ export function ProjectCard({
           {/* Technologies */}
           {technologies && technologies.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4 min-h-[64px]">
-              {technologies.map((tech, index) => (
+              {technologies.map((tech) => (
                 <span
-                  key={index}
+                  key={tech}
                   className="px-3 py-1 text-xs md:text-sm font-body h-fit
                              bg-(--color-bg-tertiary) 
                              text-(--color-text-secondary)

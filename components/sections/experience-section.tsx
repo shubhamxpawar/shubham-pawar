@@ -23,7 +23,7 @@ export function ExperienceSection() {
       
       <div className="flex flex-col gap-6 md:gap-8">
         {experience.map((exp, index) => (
-          <AnimatedWrapper key={`${exp.company}-${index}`} delay={index * 0.1}>
+          <AnimatedWrapper key={exp.company} delay={index * 0.1}>
             <ExperienceCard
               company={exp.company}
               role={exp.role}

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, LazyMotion, m } from 'framer-motion'
 
 interface NavbarProps {
   name: string
@@ -25,21 +25,22 @@ export function Navbar({ name, socialLinks }: NavbarProps) {
       setIsScrolled(window.scrollY > 20)
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close mobile menu when clicking outside
-  useEffect(() => {
-    if (isMobileMenuOpen) {
+  // Handle mobile menu body scroll lock
+  const handleMenuToggle = (open: boolean) => {
+    setIsMobileMenuOpen(open)
+    if (open) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
     }
-  }, [isMobileMenuOpen])
+  }
 
   const scrollToSection = (sectionId: string) => {
-    setIsMobileMenuOpen(false)
+    handleMenuToggle(false)
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -62,7 +63,6 @@ export function Navbar({ name, socialLinks }: NavbarProps) {
           ? 'bg-[#0a0a0a]/80 backdrop-blur-xl'
           : 'bg-transparent'
       }`}
-      role="navigation"
       aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
@@ -174,7 +174,7 @@ export function Navbar({ name, socialLinks }: NavbarProps) {
 
           {/* Hamburger Menu Button (Mobile) */}
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => handleMenuToggle(!isMobileMenuOpen)}
             className="md:hidden relative w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors duration-200"
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
@@ -211,7 +211,7 @@ export function Navbar({ name, socialLinks }: NavbarProps) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               className="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => handleMenuToggle(false)}
               style={{ top: '64px' }}
             />
 

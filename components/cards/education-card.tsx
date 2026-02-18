@@ -1,5 +1,7 @@
 'use client'
 
+import Image from "next/image"
+
 interface EducationCardProps {
   degree: string
   institution: string
@@ -39,7 +41,7 @@ export function EducationCard({
                        transition-colors duration-300
                        group-hover:border-(--color-border-hover)"
           >
-            <img
+            <Image
               src={logo}
               alt={`${institution} logo`}
               className="w-10 h-10 md:w-12 md:h-12 object-contain"

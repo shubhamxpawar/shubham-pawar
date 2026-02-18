@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 
 interface ExperienceCardProps {
   company: string
@@ -43,7 +44,7 @@ export function ExperienceCard({
                        transition-colors duration-300
                        group-hover:border-(--color-border-hover)"
           >
-            <img
+            <Image
               src={logo}
               alt={`${company} logo`}
               className="w-10 h-10 md:w-12 md:h-12 object-contain"

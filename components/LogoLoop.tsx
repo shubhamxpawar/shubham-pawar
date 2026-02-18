@@ -181,7 +181,7 @@ const useAnimationLoop = (
   }, [targetVelocity, seqWidth, seqHeight, isHovered, hoverSpeed, isVertical]);
 };
 
-export const LogoLoop = React.memo<LogoLoopProps>(
+const LogoLoop = React.memo<LogoLoopProps>(
   ({
     logos,
     speed = 120,
@@ -385,4 +385,5 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 
 LogoLoop.displayName = 'LogoLoop';
 
-export default LogoLoop;
+export default LogoLoop
+

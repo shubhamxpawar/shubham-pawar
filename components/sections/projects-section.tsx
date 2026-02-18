@@ -29,7 +29,7 @@ export function ProjectsSection() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {projects.map((project, index) => (
-          <AnimatedWrapper key={`${project.name}-${index}`} delay={index * 0.1} className="h-full">
+          <AnimatedWrapper key={project.name} delay={index * 0.1} className="h-full">
             <ProjectCard
               name={project.name}
               subtitle={project.subtitle}
