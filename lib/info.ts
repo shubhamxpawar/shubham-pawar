@@ -29,13 +29,6 @@ export const experience = [
     period: 'Nov 2024 - Dec 2024',
     description: 'Developed a modern recruitment platform with smooth animations and responsive design. Built using React, Framer Motion, and deployed on Vercel.',
   },
-  {
-    company: 'Cyra',
-    role: 'Frontend Intern',
-    type: 'Remote',
-    period: 'Jan 2026 - present',
-    description: 'Working on frontend development projects using modern web technologies. Contributing to building scalable and user-friendly web applications.',
-  },
 ]
 
 export const projects = [
