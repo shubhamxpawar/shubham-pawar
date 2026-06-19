@@ -156,7 +156,7 @@ export function HeroSection({ summary, summary2 }: HeroSectionProps) {
 
         {/* Summary 1 */}
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light leading-[1.2] sm:leading-[1.15] tracking-tight"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-light leading-[1.2] sm:leading-[1.15] tracking-tight"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -167,7 +167,7 @@ export function HeroSection({ summary, summary2 }: HeroSectionProps) {
 
         {/* Summary 2 */}
         <motion.h1
-          className="mt-2 sm:mt-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light leading-[1.2] sm:leading-[1.15] tracking-tight"
+          className="mt-2 sm:mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-light leading-[1.2] sm:leading-[1.15] tracking-tight"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
