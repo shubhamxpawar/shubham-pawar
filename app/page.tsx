@@ -25,7 +25,7 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar name={personalInfo.name} socialLinks={personalInfo.social} />
         <main className="min-h-screen">
-          <HeroSection summary={personalInfo.summary} />
+          <HeroSection summary={personalInfo.summary} summary2={personalInfo.summary2}/>
           <ExperienceSection />
           <StackSection />
           <ProjectsSection />
