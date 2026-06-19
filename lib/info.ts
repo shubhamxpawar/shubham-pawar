@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: 'Shubham Pawar',
   title: 'Full Stack Developer',
-  summary: 'I enjoy building amazing websites & exploring technology,',
-  summary2: 'I spend my time building projects, improving my skills, and strengthening my portfolio',
+  summary: 'I enjoy building amazing websites, exploring technology,',
+  summary2: 'spending my time building projects, improving my skills, and strengthening my portfolio',
   contact: {
     email: 'shubhamxpawar27@gmail.com',
     location: 'Pune, India',
