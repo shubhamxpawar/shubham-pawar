@@ -72,6 +72,18 @@ export const projects = [
     technologies: ['React', 'Vite', 'Vercel'],
     image: '/quickcare.png',
   },
+  {
+    name: 'HastKala',
+    subtitle: 'e-commerce platform built for artisans (Frontend)',
+    description: 'The platform lets anyone list, discover, and buy handicrafts - pottery, weaving, embroidery, wood carving, and more, directly from the makers.',
+    highlights: [
+      'Built using React, Vite and TypeScript',
+      'Ensured responsiveness and smooth scroll through Lenis',
+    ],
+    liveUrl: 'https://hast-kala.vercel.app/',
+    technologies: ['React', 'Vite', 'Vercel', 'Lenis'],
+    image: '/hastkala-mockup.png',
+  },
 ]
 
 export const education = {
